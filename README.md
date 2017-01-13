@@ -12,3 +12,4 @@ have colaborate in this webpage:
 * Anna Sidera (2014)
 * Angela Fernández Isasi (2014-2015)
 * Juanjo Fernández Monreal (2017)
+* Alvaro Rosado (2017)
