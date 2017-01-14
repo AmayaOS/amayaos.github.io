@@ -9,6 +9,7 @@ This webpage is build on this colaborative repository by our **Web Team** and ca
 The **Web Team** is composed by the people that colaborate making our webpage better. Until now, the following people
 have colaborate in this webpage:
 * Daniel Martín (2014-2017)
+* Franciso Domínguez (2014)
 * Anna Sidera (2014)
 * Angela Fernández Isasi (2014-2015)
 * Juanjo Fernández Monreal (2017)
