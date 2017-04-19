@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - AmayaOS</title>
+<link rel="shortcut icon" href="imagenes/favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="css/estilos.css" />
+<link rel="stylesheet" href="css/contacto.css" />
+</head>
+<body>
+
+<div id="contenedor">
+
+	<div id="encabezado">
+		<h1 class="centrado">AmayaOS</h1>
+			<p class="centrado"><a href="index.html"><img src="imagenes/logo.png" alto="logo" /></a></p>
+		<h2 class="centrado">Système d'exploitation libre de type UNIX</h2>
+		 
+	</div>
+
+	<div id="nav">
+		<ul>
+
+		<li><a href="index.html">Accueil</a></li>
+		<li><a href="license.html">Licence</a></li>
+		<li><a href="download.html">Télécharger</a></li>
+		<li><a href="#">Contact</a></li>
+                <li><a href="screenshots.html">Captures d'écran</a></li>
+                <li><a href="doc.html">Documentation</a></li>
+		<li><a href="http://wiki.amayaos.com">Wiki</a></li>
+		</ul>
+
+
+	</div>
+
+	<div id="cuerpo">
+	<h3 class="centrado">Formulaire de contact</h3>
+	<h4 class="centrado"><img src="imagenes/email.png"/></h4>
+	<p>Voulez-vous contacter les responsables du projet AmayaOS ? Pour des raisons de sécurité, vous devez remplir le formulaire suivant. Nous vous répondrons dans les plus bref délais.</p>
+ <form class="contacto" action="sendbymail.php" METHOD="post" name="formulario">
+                <div>
+                    <label for="nombre">Nom*:</label> <input placeholder="Écrivez votre nom" name="first_name" type="text">
+                </div>
+        
+                <div>
+                    <label for="correo">E-mail*:</label> <input placeholder="votre_email@example.com" name="email" type="email">
+                </div>
+                <div>
+                    <label for="correo">Sujet*:</label> 
+                    <input placeholder="Sujet de votre message" name="subject" type="text"></input>
+                </div>
+        
+                <div>
+                    <label for="comentario">Message*:</label> 
+                    <textarea placeholder="Texte de votre message" name="comments" type="text"></textarea>
+                </div>
+        
+                <div>
+                    <button class="submit" type="submit">Envoyer</button>
+		</div>
+		<div>
+			<p>Les champs marqués avec '*' sont obligatoires.</p>
+                </div>
+            </form>
+
+	</div>
+	</div>
+
+	
+
+
+
+
+</div>
+<div id="pie">
+	<hr />
+		<p class="centrado"> Cette page web se visualise mieux en utilisant du logiciel libre : </p>
+		<p class="centrado"><a target="_blank" href="http://www.gnu.org/software/gnuzilla/"><img src="imagenes/icecat.jpg"  alt="icecat" /></a></p>
+		<p class="centrado">Copyright © 2014, 2015, 2016, 2017 Daniel Martín</p>
+                <p class="centrado">Visites depuis le 12/10/2015 :</p>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10655289; 
+var sc_invisible=0; 
+var sc_security="29bda0a6"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify traffic
+stats" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10655289/0/29bda0a6/0/"
+alt="shopify traffic stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+		
+	</div>
+</body>
+</html>
