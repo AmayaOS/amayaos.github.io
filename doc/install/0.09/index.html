@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guía de instalación - AmayaOS</title>
+<link rel="shortcut icon" href="../../../imagenes/favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../../../css/estilos.css" />
+<link rel="stylesheet" href="../../../css/tabla.css" />
+
+</head>
+<body>
+
+<div id="contenedor">
+
+	<div id="encabezado">
+		<h1 class="centrado">AmayaOS</h1>
+			<p class="centrado"><a href="index.html"><img src="../../../imagenes/logo.png" alto="logo" /></a></p>
+		<h2 class="centrado">Sistema Operativo libre de tipo UNIX</h2>
+		 
+	</div>
+
+	<div id="nav">
+		<ul>
+
+		<li><a href="../../../index.html">Inicio</a></li>
+		<li><a href="../../../doc.html">Documentación</a></li>
+		<li><a href="../index.html">Guías de instalación de AmayaOS</a></li>
+		<li><a href="#">Guía de instalación de AmayaOS 0.09</a></li>
+		</ul>
+
+
+	</div>
+
+	<div id="cuerpo">
+		<h3 class="centrado">Guía de instalación</h3>
+		
+		<div id="pagina">
+		<p>¡Bienvenido a la guía de instalación de AmayaOS 0.09! Este documento te ayudará a instalar AmayaOS 0.09 en tu disco duro paso por paso en tan solo unos minutos.</p>
+		<h4 class="centrado"><img src="../../../imagenes/hard_disk_240.png"/></h4>
+		<h4>Obtener AmayaOS</h4>
+		<p>Lo primero de todo es obtener una copia de la imagen de instalación de AmayaOS, para ello podemos <a href="https://sourceforge.net/projects/amayaos/files/AmayaOS-0.09/AmayaOS-0.09-install-x86.iso/download">descargar alguna de las imágenes precompiladas</a> o <a href="#">compilar el código fuente de la imagen de instalación</a> (solo para usuarios avanzados). A continuación debemos <a href="../../burn-cd.html">grabar la imagen ISO en un CD(DVD)</a>, <a href="../../making_usb_stick.html">en un USB</a> o emularla en una máquina virtual.</p>
+		<h4>Ejecutando la Imagen de Instalación</h4>
+		<p>Debemos arrancar nuestro PC con el CD o USB insertado y con la secuencia de "boot" configurada correctamente. En caso de usar una máquina virtual debemos haber cargado la imagen ISO
+		y haber creado un disco duro virtual para la misma (Esto puede variar dependiendo del emulador que utilicemos). Si todo está correcto deberíamos obtener una pantalla como la siguiente:</p>
+		<h4 class="centrado"><img src="imagenes/install0.png"/></h4>
+		<h4>Ejecutando el instalador</h4>
+		<p>Tal y como nos informa la pantalla anterior tenemos que ejecutar el instalador escribiendo "amaya-installer" en la terminal. Una vez hayamos pulsado 'ENTER' nos aparecerá la siguiente
+		pantalla preguntándonos en que disco duro o partición queremos instalar AmayaOS:</p>
+		<h4 class="centrado"><img src="imagenes/install1.png"/></h4>
+		<p>Introducimos "/dev/sda" y pulsamos 'ENTER'. El instalador nos preguntará entonces si estamos seguros de instalar en esa partición/disco, ya que se perderán todos los datos que
+		existan en el mismo durante la instalación. Le decimos que Si introduciendo "y" ("n" para cancelar la instalación) y en cuestión de unos segundos tendremos AmayaOS instalado en nuestro
+		disco duro.</p>
+		<h4 class="centrado"><img src="imagenes/install2.png"/></h4>
+		<p>Una vez instalado el sistema simplemente introducimos "poweroff" o "reboot", para apagar y reiniciar respectivamente, extraemos el CD o USB (o en su defecto cambiamos el orden de
+		arranque en nuestra BIOS para que tenga preferencia el disco duro) y nuestro ordenador o máquina virtual arrancará con AmayaOS.</p>
+
+	</div>
+	</div>
+
+	
+
+
+
+
+</div>
+<div id="pie">
+	<hr />
+		<p class="centrado"> Esta página se visualiza mejor con software libre: </p>
+		<p class="centrado"><a target="_blank" href="http://www.gnu.org/software/gnuzilla/"><img src="../../../imagenes/icecat.jpg"  alt="icecat" /></a></p>
+		<p class="centrado">Copyright © 2014, 2015, 2016, 2017 Daniel Martín</p>
+                <p class="centrado">Visitas desde el 12/10/2015:</p>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10655289; 
+var sc_invisible=0; 
+var sc_security="29bda0a6"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify traffic
+stats" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10655289/0/29bda0a6/0/"
+alt="shopify traffic stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+		
+	</div>
+</body>
+</html>
