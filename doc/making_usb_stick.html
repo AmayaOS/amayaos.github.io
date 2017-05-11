@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grabar AmayaOS en un USB - AmayaOS</title>
+<link rel="shortcut icon" href="../imagenes/favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../css/estilos.css" />
+<link rel="stylesheet" href="../css/tabla.css" />
+
+</head>
+<body>
+
+<div id="contenedor">
+
+	<div id="encabezado">
+		<h1 class="centrado">AmayaOS</h1>
+			<p class="centrado"><a href="../index.html"><img src="../imagenes/logo.png" alto="logo" /></a></p>
+		<h2 class="centrado">Sistema Operativo libre de tipo UNIX</h2>
+		 
+	</div>
+
+	<div id="nav">
+		<ul>
+
+		<li><a href="../index.html">Inicio</a></li>
+		<li><a href="../doc.html">Documentación</a></li>
+		<li><a href="#">Grabar AmayaOS en un USB</a></li>
+		</ul>
+
+
+	</div>
+
+	<div id="cuerpo">
+		<h3 class="centrado">AmayaOS LiveUSB</h3>
+		
+		<div id="pagina">
+		<p>Este documento te ayudará a grabar AmayaOS en un dispositivo USB, o cualquier otro dispositivo extraíble similar (como una SD), de forma sencilla y en tan solo unos pocos minutos.</p>
+		<h4 class="centrado"><img src="../imagenes/usb.ico"/></h4>
+		<h4>Obtener AmayaOS</h4>
+		<p>Lo primero de todo es obtener una copia de la imagen de AmayaOS, para ello podemos <a href="../download/usb_images.html">descargar alguna de las imágenes precompiladas</a> o <a href="#">compilar el código fuente de la imagen de instalación</a> (solo para usuarios avanzados).</p>
+		<h4>Dependencias</h4>
+		<p>Para grabar la imagen ISO en el USB (o el dispositivo que vayamos a utilizar) simplemente necesitamos la utilidad estándar de UNIX® dd (duplicate disk). Esta debería estar incluida por
+		defecto en todas las distribuciones GNU/Linux, en los derivados de BSD (FreeBSD, OpenBSD, etc) y en Haiku. Aunque el Sistema Operativo que utilices no esté en esta lista es muy probable
+		que tenga esta utilidad instalada. En caso negativo, debes instalarla.</p>
+		<h4>Grabando la Imagen</h4>
+		<p>Para grabar la imagen simplemente hay que ejecutar dd de la forma que se indica a continuación, siendo "amayaos-usb.iso" el nombre de la imagen ISO de AmayaOS y "/dev/sdX"
+		la ruta al dispositivo extraíble (/dev/sda, /dev/sdb, etc). Esta ruta puede variar dependiendo del Sistema Operativo.</p>
+		<h2>user@domain$ dd if=amayaos-usb.iso of=/dev/sdX</h2>
+		<h5>*Nota: En GNU/Linux es muy probable que necesites ejecutar este comando como administrador (root)</h5>
+		<p>Una vez grabada la imagen en el USB (tardará unos segundos) simplemente reiniciamos nuestra máquina, cambiamos el orden de
+		arranque en nuestra BIOS para que tenga preferencia el USB y nuestro ordenador arrancará con AmayaOS.</p>
+
+	</div>
+	</div>
+
+	
+
+
+
+
+</div>
+<div id="pie">
+	<hr />
+		<p class="centrado"> Esta página se visualiza mejor con software libre: </p>
+		<p class="centrado"><a target="_blank" href="http://www.gnu.org/software/gnuzilla/"><img src="../imagenes/icecat.jpg"  alt="icecat" /></a></p>
+		<p class="centrado">Copyright © 2014, 2015, 2016, 2017 Daniel Martín</p>
+                <p class="centrado">Visitas desde el 12/10/2015:</p>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10655289; 
+var sc_invisible=0; 
+var sc_security="29bda0a6"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify traffic
+stats" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10655289/0/29bda0a6/0/"
+alt="shopify traffic stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+		
+	</div>
+</body>
+</html>
