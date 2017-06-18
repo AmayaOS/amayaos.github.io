@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Installation Guide - AmayaOS</title>
+<link rel="shortcut icon" href="../imagenes/favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../css/estilos.css" />
+<link rel="stylesheet" href="../css/tabla.css" />
+
+</head>
+<body>
+
+<div id="contenedor">
+
+	<div id="encabezado">
+		<h1 class="centrado">AmayaOS</h1>
+			<p class="centrado"><a href="../index.html"><img src="../imagenes/logo.png" alto="logo" /></a></p>
+		<h2 class="centrado">UNIX-like Operating System</h2>
+                </p><p><a target="_blank" href="installation-guide.html"><p class="centrado">Español</a> <a target="_blank" href="installation-guide.fr.html"> Française</p></a></p>
+		 
+	</div>
+
+	<div id="nav">
+		<ul>
+
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="../doc.html">Documentation</a></li>
+		<li><a href="#">Installation Guide</a></li>
+		</ul>
+
+
+	</div>
+
+	<div id="cuerpo">
+		<h3 class="centrado">Guía de instalación</h3>
+		
+		<div id="pagina">
+		<p>Welcome to the AmayaOS Installation Guide! This document will help you to install AmayaOS into your hard disk step by step in just a few minutes.</p>
+		<h4 class="centrado"><img src="../imagenes/hard_disk_240.png"/></h4>
+		<h4>Get AmayaOS</h4>
+		<p>First of all we have to get a copy of an AmayaOS installation image. For that we can <a href="../download/hard_disk_images.en.html">download a precompiled image</a> or <a href="#">compile the installation image source code</a> (not recommended for newbies). Then we have to <a href="burn-cd.en.html">burn the ISO file to a CD, DVD</a>, <a href="making_usb_stick.en.html">USB</a> or emulate it into a virtual machine.</p>
+		<h4>Running the Installation Image</h4>
+		<p>We have to turn on our computer with the installation medium marked as default on boot sequence. In the case we are using a virtual machine we have to load the ISO file and 
+		create a virtual hard disk for the system (This depends on the emulator we are using). If all is going correctly we will get a screen like in the following image:</p>
+		<h4 class="centrado"><img src="install/0.09/imagenes/install0.png"/></h4>
+		<h4>Running the installer</h4>
+		<p>We have to execute the AmayaOS installer by typing "amaya-install" into the shell. Then, we will get a screen in which we will have to choose the hard disk or partition in which we want to install AmayaOS:</p>
+		<h4 class="centrado"><img src="install/0.09/imagenes/install1.png"/></h4>
+		<p>We type "/dev/sda" and press 'ENTER' to install in the whole disk. Then the installer will ask if we are sure to install in that disk or partition. All previous data will be removed. Just press "y" ("n" if you want to cancel the installation process) and in a few seconds the process will finish to install AmayaOS in your hard disk.</p>
+		<h4 class="centrado"><img src="install/0.09/imagenes/install2.png"/></h4>
+		<p>Now, just type "poweroff" or "reboot" and remove the installation medium or change the boot sequence to enable the hard disk boot and then your computer or virtual machine will start as default with the Amaya Operating System</p>
+
+	</div>
+	</div>
+
+	
+
+
+
+
+</div>
+<div id="pie">
+	<hr />
+		<p class="centrado"> This webpage works better with Free Software: </p>
+		<p class="centrado"><a target="_blank" href="http://www.gnu.org/software/gnuzilla/"><img src="../imagenes/icecat.jpg"  alt="icecat" /></a></p>
+		<p class="centrado">Copyright © 2014, 2015, 2016, 2017 Daniel Martín</p>
+                <p class="centrado">Visits since 12/10/2015:</p>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10655289; 
+var sc_invisible=0; 
+var sc_security="29bda0a6"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify traffic
+stats" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10655289/0/29bda0a6/0/"
+alt="shopify traffic stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+		
+	</div>
+</body>
+</html>
