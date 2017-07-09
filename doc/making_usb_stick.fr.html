@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Graver AmayaOS sur un USB - AmayaOS</title>
+<link rel="shortcut icon" href="../imagenes/favicon.png">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="../css/estilos.css" />
+<link rel="stylesheet" href="../css/tabla.css" />
+
+</head>
+<body>
+
+<div id="contenedor">
+
+	<div id="encabezado">
+		<h1 class="centrado">AmayaOS</h1>
+			<p class="centrado"><a href="../index.fr.html"><img src="../imagenes/logo.png" alto="logo" /></a></p>
+		<h2 class="centrado">Système d'exploitation libre de type UNIX</h2>
+		 
+	</div>
+
+	<div id="nav">
+		<ul>
+
+		<li><a href="../index.fr.html">Accueil</a></li>
+		<li><a href="../doc.fr.html">Documentation</a></li>
+		<li><a href="#">Graver AmayaOS sur un USB</a></li>
+		</ul>
+
+
+	</div>
+
+	<div id="cuerpo">
+		<h3 class="centrado">AmayaOS LiveUSB</h3>
+		
+		<div id="pagina">
+		<p>Cette notice vous aidera à graver AmayaOS sur une clé USB ou d'autres médias amovibles similaires telle qu'une carte mémoire SD, de façon simple et dans quelques instants.</p>
+		<h4 class="centrado"><img src="../imagenes/usb.ico"/></h4>
+		<h4>Obtenir AmayaOS</h4>
+		<p>D'abord il faut obtenir une copie d'une image d'AmayaOS. Vous pouvez <a href="../download/cd_images.html">télécharger une des images précompilées</a> ou bien <a href="#">compiler d'après le code source une image d'installation</a> (seulement pour les utilisateurs avancés).</p>
+		<h4>Dépendances</h4>
+		<p>Pour graver l'image ISO sur le USB (ou d'autres médias amovibles), on peut utiliser la commande UNIX® dd (duplicate disk). Cet outil doit être installé par défaut sur toutes les distributions GNU/Linux, derivées de BSD (FreeBSD, OpenBSD, etc) ou HaikuOS. Au cas improbable où dd ne soit pas installée sur votre système vous devrez l'installer.</p>
+		<h4>En gravant l'image</h4>
+		<p>Pour graver l'image, il faut exécuter dd de la manière indiquée dans la suite, étant « amayaos-usb.iso » le nom de l'image ISO et « /dev/sdX » le répertoire identifiant le média amovible (/dev/sda, /dev/sdb, etc). Ce répertoire peut utiliser d'autres noms si on utilise d'autres systèmes d'exploitation ou types de média (par example, une carte SD peut se nommer /dev/mmcblk0).</p>
+		<h2>user@domain$ dd if=amayaos-usb.iso of=/dev/sdX</h2>
+		<h5>*Note : Sous GNU/Linux vous aurez très probablement besoin d'exécuter la commande avec les privilèges d'administrateur (root).</h5>
+		<p>Une fois l'image soit gravée sur le USB (cette opération peut durer quelques secondes) on doit tout simplement redémarrer notre ordinateur et configurer la séquence de démarrage pour changer la priorité et démarrer depuis le USB (ou carte mémoire SD).</p>
+
+	</div>
+	</div>
+
+	
+
+
+
+
+</div>
+<div id="pie">
+	<hr />
+		<p class="centrado"> Cette page web se visualise mieux en utilisant du logiciel libre : </p>
+		<p class="centrado"><a target="_blank" href="http://www.gnu.org/software/gnuzilla/"><img src="../imagenes/icecat.jpg"  alt="icecat" /></a></p>
+		<p class="centrado">Copyright © 2014, 2015, 2016, 2017 Daniel Martín - Traduit par : TheFaico</p>
+                <p class="centrado">Visites depuis le 12/10/2015 :</p>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10655289; 
+var sc_invisible=0; 
+var sc_security="29bda0a6"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify traffic
+stats" href="http://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/10655289/0/29bda0a6/0/"
+alt="shopify traffic stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+		
+	</div>
+</body>
+</html>
